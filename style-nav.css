@@ -241,6 +241,9 @@ body {
 align-items: center;
 height: auto;
 background-color: #D4D4D4;
+min-height: 300px;
+height: 100%;
+justify-content: space-between;
 }
 
 .card-img-top {
@@ -309,4 +312,18 @@ footer {
     border-radius: var(--bs-btn-border-radius);
     background-color: #ffc107;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin-top: auto;
+}
+
+.card-text {
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+.card-container {
+    align-items: stretch
+}
+
+.imagen-datos {
+    width: 25%;
 }
