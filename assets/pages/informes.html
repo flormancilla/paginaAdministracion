@@ -111,7 +111,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Escuela</h5>
                             <p class="card-text">Plantillas informes 2024 y plan de trabajo 2025.</p>
-                            <a href="./informesEscuela.html" class="btn btn-primary">Elegir tipo de informe</a>
+                            <a href="#" class="btn btn-primary" onclick="alertaInformesEscuela()">Elegir tipo de
+                                informe</a>
                         </div>
                     </div>
                 </div>
@@ -121,7 +122,8 @@
                         <div class="card-body">
                             <h5 class="card-title">inclusión Escolar</h5>
                             <p class="card-text">Plantillas informes 2024 y plan de trabajo 2025.</p>
-                            <a href="./informesInclusion.html" class="btn btn-primary">Elegir tipo de informe</a>
+                            <a href="#" class="btn btn-primary" onclick="alertaInformesInclusion()">Elegir tipo de
+                                informe</a>
                         </div>
                     </div>
                 </div>
@@ -131,7 +133,7 @@
                         <div class="card-body">
                             <h5 class="card-title">EFI</h5>
                             <p class="card-text">Plantillas informes 2024 y plan de trabajo 2025.</p>
-                            <a href="./informesEFI.html" class="btn btn-primary">Elegir tipo de informe</a>
+                            <a href="#" class="btn btn-primary" onclick="alertaInformesEFI()">Elegir tipo de informe</a>
                         </div>
                     </div>
                 </div>
@@ -141,7 +143,7 @@
                         <div class="card-body">
                             <h5 class="card-title">COL</h5>
                             <p class="card-text">Plantillas informes 2024 y plan de trabajo 2025.</p>
-                            <a href="./informesCOL.html" class="btn btn-primary">Elegir tipo de informe</a>
+                            <a href="#" class="btn btn-primary" onclick="alertaInformesCOL()">Elegir tipo de informe</a>
                         </div>
                     </div>
                 </div>
@@ -151,7 +153,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Centro de Día</h5>
                             <p class="card-text">Plantillas informes 2024 y plan de trabajo 2025.</p>
-                            <a href="./informesCD.html" class="btn btn-primary">Elegir tipo de informe</a>
+                            <a href="#" class="btn btn-primary" onclick="alertaInformesCD()">Elegir tipo de informe</a>
                         </div>
                     </div>
                 </div>
@@ -193,6 +195,114 @@
                 if (result.isConfirmed) {
                     setTimeout(() => {
                         window.location.href = "./informesET.html";
+                    }, 1000);
+                }
+            });
+        }
+    </script>
+    <script>
+        function alertaInformesInclusion() {
+            Swal.fire({
+                title: "Solo debe corroborar el curso y agregar el horario de cursado.",
+                showClass: {
+                    popup: `
+                            animate__animated
+                            animate__fadeInUp
+                            animate__faster
+                          `
+                },
+                hideClass: {
+                    popup: `
+                            animate__animated
+                            animate__fadeOutDown
+                            animate__faster
+                          `
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    setTimeout(() => {
+                        window.location.href = "./informesEscuela.html";
+                    }, 1000);
+                }
+            });
+        }
+    </script>
+    <script>
+        function alertaInformesEFI() {
+            Swal.fire({
+                title: "Solo debe corroborar el curso y agregar el horario de cursado.",
+                showClass: {
+                    popup: `
+                            animate__animated
+                            animate__fadeInUp
+                            animate__faster
+                          `
+                },
+                hideClass: {
+                    popup: `
+                            animate__animated
+                            animate__fadeOutDown
+                            animate__faster
+                          `
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    setTimeout(() => {
+                        window.location.href = "./informesEFI.html";
+                    }, 1000);
+                }
+            });
+        }
+    </script>
+    <script>
+        function alertaInformesCOL() {
+            Swal.fire({
+                title: "Solo debe corroborar el curso y agregar el horario de cursado.",
+                showClass: {
+                    popup: `
+                                    animate__animated
+                                    animate__fadeInUp
+                                    animate__faster
+                                  `
+                },
+                hideClass: {
+                    popup: `
+                                    animate__animated
+                                    animate__fadeOutDown
+                                    animate__faster
+                                  `
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    setTimeout(() => {
+                        window.location.href = "./informesEFI.html";
+                    }, 1000);
+                }
+            });
+        }
+    </script>
+    <script>
+        function alertaInformesCD() {
+            Swal.fire({
+                title: "Solo debe corroborar el curso y agregar el horario de cursado.",
+                showClass: {
+                    popup: `
+                                                    animate__animated
+                                                    animate__fadeInUp
+                                                    animate__faster
+                                                  `
+                },
+                hideClass: {
+                    popup: `
+                                                    animate__animated
+                                                    animate__fadeOutDown
+                                                    animate__faster
+                                                  `
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    setTimeout(() => {
+                        window.location.href = "./informesEFI.html";
                     }, 1000);
                 }
             });
