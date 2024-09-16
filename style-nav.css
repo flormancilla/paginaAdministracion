@@ -327,3 +327,8 @@ footer {
 .imagen-datos {
     width: 25%;
 }
+
+.swal2-confirm {
+    color: white;
+    background-color: #FF5001;
+}
