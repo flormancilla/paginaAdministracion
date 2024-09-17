@@ -120,7 +120,7 @@
                     <div class="card">
                         <img src="../images/inclusion-solo.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">inclusión Escolar</h5>
+                            <h5 class="card-title">Inclusión Escolar</h5>
                             <p class="card-text">Plantillas informes 2024 y plan de trabajo 2025.</p>
                             <a href="#" class="btn btn-primary" onclick="alertaInformesInclusion()">Elegir tipo de
                                 informe</a>
@@ -227,6 +227,33 @@
             });
         }
     </script>
+        <script>
+            function alertaInformesInclusion() {
+                Swal.fire({
+                    title: "Solo debe corroborar el curso y agregar el horario de cursado.",
+                    showClass: {
+                        popup: `
+                                animate__animated
+                                animate__fadeInUp
+                                animate__faster
+                              `
+                    },
+                    hideClass: {
+                        popup: `
+                                animate__animated
+                                animate__fadeOutDown
+                                animate__faster
+                              `
+                    }
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        setTimeout(() => {
+                            window.location.href = "./informesInclusion.html";
+                        }, 1000);
+                    }
+                });
+            }
+        </script>
     <script>
         function alertaInformesEFI() {
             Swal.fire({
@@ -275,7 +302,7 @@
             }).then((result) => {
                 if (result.isConfirmed) {
                     setTimeout(() => {
-                        window.location.href = "./informesEFI.html";
+                        window.location.href = "./informesCOL.html";
                     }, 1000);
                 }
             });
@@ -302,7 +329,7 @@
             }).then((result) => {
                 if (result.isConfirmed) {
                     setTimeout(() => {
-                        window.location.href = "./informesEFI.html";
+                        window.location.href = "./informesCD.html";
                     }, 1000);
                 }
             });
