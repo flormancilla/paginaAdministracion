@@ -103,7 +103,7 @@
                                 <h5 class="card-title">APROSS</h5>
                                 <p class="card-text">Aquí encontrará todas las planillas correspondientes a APROSS. Solo
                                     se puede ingresar con autorización de acceso.</p>
-                                <a href="https://drive.google.com/drive/folders/1MOg9jIjNiPvpQXq-Yq_J5ju78KC9M48o?usp=drive_link" class="btn btn-primary">Ir a carpeta</a>
+                                <a href="https://drive.google.com/drive/folders/1MOg9jIjNiPvpQXq-Yq_J5ju78KC9M48o?usp=drive_link" class="btn btn-primary" target="_blank">Ir a carpeta</a>
                             </div>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                                 <h5 class="card-title">PAMI</h5>
                                 <p class="card-text">Aquí encontrará todas las planillas correspondientes a PAMI. Solo
                                     se puede ingresar con autorización de acceso.</p>
-                                <a href="https://drive.google.com/drive/folders/1MVIthafOXY9O8xBz-HTwzDTjN1KP2wqa?usp=drive_link" class="btn btn-primary">Ir a carpeta</a>
+                                <a href="https://drive.google.com/drive/folders/1MVIthafOXY9O8xBz-HTwzDTjN1KP2wqa?usp=drive_link" class="btn btn-primary" target="_blank">Ir a carpeta</a>
                             </div>
                         </div>
                     </div>
@@ -152,8 +152,8 @@
                 <footer>
                     <div class="footerBox text-center">
                         <p>- Para uso exclusivo del personal de APADIM -</p>
-                        <span>Florencia: <a href="mailto:mesadeentrada@apadim.org.ar">mesadeentrada@apadim.org.ar</a> ||</span>
-                        <span>Luciano: <a href="mailto:administracion@apadim.org.ar">administracion@apadim.org.ar</a> </span>
+                        <span>Florencia: <a href="mailto:mesadeentrada@apadim.org.ar" target="_blank">mesadeentrada@apadim.org.ar</a> ||</span>
+                        <span>Luciano: <a href="mailto:administracion@apadim.org.ar" target="_blank">administracion@apadim.org.ar</a> </span>
                     </div>
                 </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -166,22 +166,22 @@
                     title: "Recuerde: PROSAD se firma dia por dia (calendario) con sábados y domingos y se firma y sella en cada recuadro, en observaciones se pone ausente.",
                     showClass: {
                         popup: `
-                        animate__animated
-                        animate__fadeInUp
-                        animate__faster
-                      `
+            animate__animated
+            animate__fadeInUp
+            animate__faster
+        `
                     },
                     hideClass: {
                         popup: `
-                        animate__animated
-                        animate__fadeOutDown
-                        animate__faster
-                      `
+            animate__animated
+            animate__fadeOutDown
+            animate__faster
+        `
                     }
                 }).then((result) => {
                     if (result.isConfirmed) {
                         setTimeout(() => {
-                            window.location.href = "https://drive.google.com/drive/folders/1J7Uqn50WBB9W7LRtiANJcEB2qx-KrbfR?usp=drive_link";
+                            window.open("https://drive.google.com/drive/folders/1FA8Jb26qoRr0FkuYAHQiG01Bt-PpaUSP?usp=drive_link", "_blank");
                         }, 1000);
                     }
                 });
@@ -193,23 +193,21 @@
                     title: "Recuerde: las planillas de PFIS se firman con color AZUL.",
                     showClass: {
                         popup: `
-                        animate__animated
-                        animate__fadeInUp
-                        animate__faster
-                      `
+                            animate__animated
+                            animate__fadeInUp
+                            animate__faster
+                          `
                     },
                     hideClass: {
                         popup: `
-                        animate__animated
-                        animate__fadeOutDown
-                        animate__faster
-                      `
+                            animate__animated
+                            animate__fadeOutDown
+                            animate__faster
+                          `
                     }
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        setTimeout(() => {
-                            window.location.href = "https://drive.google.com/drive/folders/11c1zXqOTkLBWfmJDmjjxNYcfvtKKFHpf?usp=drive_link";
-                        }, 1000);
+                        window.open('https://drive.google.com/drive/folders/13UBM1cJ9vujOp6SJx_wR1P_HtkIDfXLs?usp=drive_link', '_blank');
                     }
                 });
             }
